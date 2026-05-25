@@ -67,7 +67,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 0 0.523599" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/A.dae" />
@@ -81,7 +81,7 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 0 0.523599" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/A.dae" />
@@ -241,7 +241,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 0 0.523599" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/A.dae" />
@@ -255,7 +255,7 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 0 0.523599" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/A.dae" />
@@ -266,8 +266,8 @@
     name="2A_joint"
     type="revolute">
     <origin
-      xyz="0.063953 -0.10903 -0.0064656"
-      rpy="0.091095 -0.034728 -1.0878" />
+      xyz="0.109 -0.062 0.03"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
@@ -440,8 +440,8 @@
     name="3A_joint"
     type="revolute">
     <origin
-      xyz="-0.061283 -0.10903 -0.019397"
-      rpy="0.087154 0.06795 -2.1305" />
+      xyz="0 -0.125 0.03"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
@@ -614,8 +614,8 @@
     name="4A_joint"
     type="revolute">
     <origin
-      xyz="-0.1239 0 -0.025862"
-      rpy="-0.0040982 0.11594 3.1017" />
+      xyz="-0.109 -0.062 0.03"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
@@ -788,8 +788,8 @@
     name="5A_joint"
     type="revolute">
     <origin
-      xyz="-0.061283 0.10903 -0.019397"
-      rpy="-0.091209 0.060886 2.0514" />
+      xyz="-0.109 0.062 0.03"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
@@ -962,8 +962,8 @@
     name="6A_joint"
     type="revolute">
     <origin
-      xyz="0.0639532743510104 0.109034291855445 -0.00646562448057778"
-      rpy="-0.0870289746680175 -0.0417833420081687 1.00880226194828" />
+      xyz="0 0.1259 0.03"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
