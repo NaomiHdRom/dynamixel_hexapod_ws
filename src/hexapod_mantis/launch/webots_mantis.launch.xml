@@ -1,0 +1,40 @@
+<launch>
+  <!-- Get the package share directory -->
+  <let name="package_share" value="$(find-pkg-share hexapod_mantis)" />
+  <!-- Arguments for initial pose -->
+
+
+  <!-- ================= Launch Webots ================= -->
+  <let name="world_path" value="$(var package_share)/worlds/test.wbt" />
+  <let name="controllers_path" value="$(var package_share)/controllers" />
+
+  <executable cmd="webots --mode=realtime $(var world_path)" output="screen">
+    <env name="WEBOTS_CONTROLLER_PATH" value="$(var controllers_path)" />
+    <env name="DISPLAY" value="$(env DISPLAY :0)" />
+  </executable>
+
+
+
+  <!-- =============== robot_state_publisher =============== -->
+  <!-- TODO: agregar urdf -->
+  <!-- <node pkg="robot_state_publisher" exec="robot_state_publisher">
+    <param name="robot_description" value="$(command 'cat $(var package_share)/urdf/mantis.urdf')" />
+    <param name="use_sim_time" value="true" />
+    <remap from="joint_states" to="/hardware/joint_states"/>
+    <remap from="robot_description" to="/hardware/base/robot_description"/>
+  </node> -->
+
+
+  <!-- ========== RViz custom config ========== -->
+  <node pkg="rviz2" exec="rviz2" name="rviz2" output="screen" args="-d $(var package_share)/rviz/mantis_wbt.rviz">
+    <param name="use_sim_time" value="true" />
+  </node>
+
+  <!-- ========== JOYSTICK (optional) ========== -->
+  <node pkg="joy" exec="joy_node" name="joy_node" output="screen">
+    <remap from="joy" to="/hardware/joy"/>
+  </node>
+
+
+
+</launch>

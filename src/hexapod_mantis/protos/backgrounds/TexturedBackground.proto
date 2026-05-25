@@ -1,0 +1,10 @@
+#VRML_SIM R2025a utf8
+PROTO TexturedBackground [
+]
+{
+  Background {
+    skyColor [
+      0.7 0.8 0.9
+    ]
+  }
+}

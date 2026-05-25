@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="dynamixel_hexapod">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.000381211483198474 -2.02321492892565E-11 -0.00369194391464393" rpy="0 0 0"/>
+      <mass value="0.527106225842897"/>
+      <inertia ixx="0.00177362239707865" ixy="6.69374783466431E-11" ixz="-0.000154235397930524"
+               iyy="0.00176412791954338" iyz="6.91101668758411E-12" izz="0.00325143053722484"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/models/base.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://hexapod_mantis/models/base_collider.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="1A_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/1A_link.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/1A_link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="1B_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/1B_link.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/1B_link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="1C_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/1C_link.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/1C_link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="2A_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/2A_link.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/2A_link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="2B_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/2B_link.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/2B_link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="2C_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/2C_link.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/2C_link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="3A_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/3A_link.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/3A_link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="3B_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/3B_link.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/3B_link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="3C_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/3C_link.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/3C_link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="4A_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/4A_link.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/4A_link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="4B_link">
+    <visual>
+      <geometry>
+        <mesh filename="models/4B_link.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/4B_link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="4C_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/4C_link.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/4C_link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="5A_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/5A_link.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/5A_link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="5B_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/5B_link.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/5B_link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="5C_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/5C_link.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/5C_link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="6A_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/6A_link.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://dynamixel_hexapod_description/meshes/6A_link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

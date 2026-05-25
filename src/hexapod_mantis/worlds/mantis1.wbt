@@ -1,0 +1,211 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "../protos/backgrounds/TexturedBackground.proto"
+EXTERNPROTO "../protos/backgrounds/TexturedBackgroundLight.proto"
+EXTERNPROTO "../protos/backgrounds/UnevenTerrain.proto"
+EXTERNPROTO "../protos/backgrounds/SandyGround.proto"
+EXTERNPROTO "../protos/Mantis.proto"
+
+WorldInfo {
+  info [
+    "Mantis Hexapod Robot"
+    "Author: Matt Denton"
+  ]
+  title "Mantis Hexapod"
+  ERP 0.62
+  basicTimeStep 10
+  contactProperties [
+    ContactProperties {
+      coulombFriction [
+        12
+      ]
+      softCFM 1e-05
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.05155450161308938 0.024711557852070798 0.9983643985399068 2.0800129009580433
+  position 0.48173547680606027 -0.1943825842134486 0.07790427168022868
+  follow "Mantis"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+UnevenTerrain {
+  rotation 0 0 1 -1.5708
+  size 1000 1000 100
+  xDimension 100
+  yDimension 100
+  appearance SandyGround {
+    textureTransform TextureTransform {
+      scale 1000 1000
+    }
+  }
+  perlinNOctaves 8
+}
+Robot {
+  children [
+    DEF base_link_visual Pose {
+      children [
+        CadShape {
+          url [
+            "../../../../../src/hexapod_mantis/models/base.dae"
+          ]
+        }
+      ]
+    }
+    DEF link_1A HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0.109 0.062 0.03
+      }
+      device [
+        DEF joint_1A RotationalMotor {
+        }
+        DEF joint_1A_sensor PositionSensor {
+        }
+      ]
+      endPoint DEF link_1A Solid {
+        translation 0.109 0.062 0.03
+        rotation 0 0 1 0.523
+        children [
+          DEF link_1A Pose {
+            children [
+              DEF link_1B HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0.178 0.099 0.03
+                  anchor 0 0 30
+                }
+                endPoint DEF link_1B_visual Solid {
+                  translation 0.1 0 0
+                  children [
+                    HingeJoint {
+                      jointParameters HingeJointParameters {
+                        axis 0 1 0
+                      }
+                      device [
+                        DEF joint_1B RotationalMotor {
+                        }
+                        DEF joint_1B_sensor PositionSensor {
+                        }
+                      ]
+                      endPoint DEF link_1C Solid {
+                        translation 0.2 0 0
+                        children [
+                          HingeJoint {
+                            jointParameters HingeJointParameters {
+                            }
+                            device [
+                              PositionSensor {
+                              }
+                              RotationalMotor {
+                              }
+                            ]
+                          }
+                        ]
+                        boundingObject DEF link_1C_collision Mesh {
+                          url [
+                            "../../../../../src/hexapod_mantis/models/C_collider.dae"
+                          ]
+                        }
+                        physics Physics {
+                          density -1
+                          mass 0.1
+                          centerOfMass [
+                            0 0 0
+                          ]
+                          inertiaMatrix [
+                            1 1 1
+                            0 0 0
+                          ]
+                        }
+                      }
+                    }
+                    DEF link_1B_visual Pose {
+                      children [
+                        CadShape {
+                          url [
+                            "../../../../../src/hexapod_mantis/models/B.dae"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                  boundingObject Pose {
+                    children [
+                      Mesh {
+                        url [
+                          "../../../../../src/hexapod_mantis/models/B_collider.dae"
+                        ]
+                      }
+                    ]
+                  }
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                    centerOfMass [
+                      0 0 0
+                    ]
+                    inertiaMatrix [
+                      1 1 1
+                      0 0 0
+                    ]
+                  }
+                }
+              }
+              DEF link_1A_visual CadShape {
+                url [
+                  "../../../../../src/hexapod_mantis/models/A.dae"
+                ]
+              }
+            ]
+          }
+        ]
+        boundingObject DEF link_1A_collision Pose {
+          children [
+            Mesh {
+              url [
+                "../../../../../src/hexapod_mantis/models/A_collider.dae"
+              ]
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.3
+          centerOfMass [
+            0 0 0
+          ]
+          inertiaMatrix [
+            1 1 1
+            0 0 0
+          ]
+        }
+      }
+    }
+  ]
+  boundingObject DEF base_link_collider Pose {
+    children [
+      Mesh {
+        url [
+          "../../../../../src/hexapod_mantis/models/base_collider.dae"
+        ]
+      }
+    ]
+  }
+  physics Physics {
+    density -1
+    mass 0.3
+    centerOfMass [
+      0 0 0
+    ]
+    inertiaMatrix [
+      1 1 1
+      0 0 0
+    ]
+  }
+}
+Mantis {
+  translation 6.15 24.12 61.42
+  rotation 0 0 1 1.3
+}

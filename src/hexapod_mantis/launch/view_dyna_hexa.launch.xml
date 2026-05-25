@@ -1,0 +1,24 @@
+<launch>
+  <!-- Get the package share directory -->
+  <let name="package_share" value="$(find-pkg-share hexapod_mantis)" />
+
+  <!-- =============== Load URDF =============== -->
+  <let name="urdf_file" value="$(var package_share)/urdf/dyna_hexa.urdf" />
+  <let name="urdf_content" value="$(command 'cat $(var urdf_file)')" />
+
+  <!-- =============== robot_state_publisher =============== -->
+  <node pkg="robot_state_publisher" exec="robot_state_publisher" name="robot_state_publisher">
+    <param name="robot_description" value="$(var urdf_content)" />
+    <param name="frame_prefix" value="" />
+    <param name="publish_frequency" value="50.0" />
+  </node>
+
+  <!-- =============== joint_state_publisher_gui =============== -->
+  <node pkg="joint_state_publisher_gui" exec="joint_state_publisher_gui" name="joint_state_publisher_gui">
+  </node>
+
+  <!-- ========== RViz ========== -->
+  <node pkg="rviz2" exec="rviz2" name="rviz2" output="screen" args="-d $(var package_share)/rviz/dyna_hexa_view.rviz">
+  </node>
+
+</launch>
