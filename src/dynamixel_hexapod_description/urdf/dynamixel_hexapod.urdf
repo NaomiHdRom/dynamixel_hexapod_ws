@@ -67,7 +67,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0.523599" />
+        rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/A.dae" />
@@ -81,7 +81,7 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0.523599" />
+        rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/A.dae" />
@@ -93,7 +93,7 @@
     type="revolute">
     <origin
       xyz="0.109 0.062 0.03"
-      rpy="0 0 0" />
+      rpy="0 0 0.523599" />
     <parent
       link="base_link" />
     <child
@@ -110,7 +110,7 @@
     name="1B_link">
     <inertial>
       <origin
-        xyz="0.125901187517044 -0.0078222020366171 -0.00240087639762571"
+        xyz="0.07825 0 0"
         rpy="0 0 0" />
       <mass
         value="0.120941358119086" />
@@ -241,7 +241,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 -0.523599" />
+        rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/A.dae" />
@@ -255,7 +255,7 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 -0.523599" />
+        rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/A.dae" />
@@ -267,7 +267,7 @@
     type="revolute">
     <origin
       xyz="0.109 -0.062 0.03"
-      rpy="0 0 0" />
+      rpy="0 0 -0.525399" />
     <parent
       link="base_link" />
     <child
@@ -284,7 +284,7 @@
     name="2B_link">
     <inertial>
       <origin
-        xyz="0.123975813664429 -0.00796543743027611 -0.00236429836577412"
+        xyz="0.07825 0 0"
         rpy="0 0 0" />
       <mass
         value="0.122818951689808" />
@@ -415,7 +415,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 -1.5708" />
+        rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/A.dae" />
@@ -429,7 +429,7 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 -1.5708" />
+        rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/A.dae" />
@@ -441,7 +441,7 @@
     type="revolute">
     <origin
       xyz="0 -0.125 0.03"
-      rpy="0 0 0" />
+      rpy="0 0 -1.5708" />
     <parent
       link="base_link" />
     <child
@@ -589,7 +589,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 -2.61799" />
+        rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/A.dae" />
@@ -603,7 +603,7 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 -2.61799" />
+        rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/A.dae" />
@@ -615,7 +615,7 @@
     type="revolute">
     <origin
       xyz="-0.109 -0.062 0.03"
-      rpy="0 0 0" />
+      rpy="0 0 -2.61799" />
     <parent
       link="base_link" />
     <child
@@ -673,7 +673,7 @@
     type="revolute">
     <origin
       xyz="0.0782500731858154 0 0"
-      rpy="0.00541027891423858 -0.819093279009697 0.0333518742125957" />
+      rpy="0.00541027891423858 -0.819093279009697 0.033351874212595" />
     <parent
       link="4A_link" />
     <child
@@ -763,7 +763,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 -3.66519" />
+        rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/A.dae" />
@@ -777,7 +777,7 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 -3.66519" />
+        rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/A.dae" />
@@ -789,7 +789,7 @@
     type="revolute">
     <origin
       xyz="-0.109 0.062 0.03"
-      rpy="0 0 0" />
+      rpy="0 0 -3.66519" />
     <parent
       link="base_link" />
     <child
@@ -821,7 +821,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 -3.66519" />
+        rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/B.dae" />
@@ -835,7 +835,7 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 -3.66519" />
+        rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/B.dae" />
@@ -937,7 +937,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 1.5708" />
+        rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/A.dae" />
@@ -951,7 +951,7 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 1.5708" />
+        rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://dynamixel_hexapod_description/meshes/A.dae" />
@@ -963,7 +963,7 @@
     type="revolute">
     <origin
       xyz="0 0.1259 0.03"
-      rpy="0 0 0" />
+      rpy="0 0 1.5708" />
     <parent
       link="base_link" />
     <child
