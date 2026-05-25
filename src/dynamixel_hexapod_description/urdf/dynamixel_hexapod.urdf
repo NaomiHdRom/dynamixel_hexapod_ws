@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot
   name="dynamixel_hexapod">
-  <link name="world"/>
-
   <link
     name="base_link">
     <inertial>
@@ -43,11 +41,7 @@
       </geometry>
     </collision>
   </link>
-    <joint name="world_to_base_link" type="fixed">
-    <parent link="world"/>
-    <child link="base_link"/>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-  </joint>
+
   <link
     name="1A_link">
     <inertial>

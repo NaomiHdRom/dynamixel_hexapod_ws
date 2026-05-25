@@ -1,0 +1,140 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    LEG1_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    LEG2_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    LEG3_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    LEG4_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    LEG5_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    LEG6_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    GROUP1_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    GROUP2_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+LEG1_controller:
+  ros__parameters:
+    joints:
+      - 1A_joint
+      - 1B_joint
+      - 1C_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+LEG2_controller:
+  ros__parameters:
+    joints:
+      - 2A_joint
+      - 2B_joint
+      - 2C_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+LEG3_controller:
+  ros__parameters:
+    joints:
+      - 3A_joint
+      - 3B_joint
+      - 3C_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+LEG4_controller:
+  ros__parameters:
+    joints:
+      - 4A_joint
+      - 4B_joint
+      - 4C_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+LEG5_controller:
+  ros__parameters:
+    joints:
+      - 5A_joint
+      - 5B_joint
+      - 5C_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+LEG6_controller:
+  ros__parameters:
+    joints:
+      - 6A_joint
+      - 6B_joint
+      - 6C_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+GROUP1_controller:
+  ros__parameters:
+    joints:
+      - 1A_joint
+      - 1B_joint
+      - 1C_joint
+      - 3A_joint
+      - 3B_joint
+      - 3C_joint
+      - 5A_joint
+      - 5B_joint
+      - 5C_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+GROUP2_controller:
+  ros__parameters:
+    joints:
+      - 2A_joint
+      - 2B_joint
+      - 2C_joint
+      - 4A_joint
+      - 4B_joint
+      - 4C_joint
+      - 6A_joint
+      - 6B_joint
+      - 6C_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity

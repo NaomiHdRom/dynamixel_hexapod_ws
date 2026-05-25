@@ -1,0 +1,21 @@
+# Default initial positions for dynamixel_hexapod's ros2_control fake system
+
+initial_positions:
+  1A_joint: 0.0
+  1B_joint: 0.0
+  1C_joint: 0.0
+  2A_joint: 0.0
+  2B_joint: 0.0
+  2C_joint: 0.0
+  3A_joint: 0.0
+  3B_joint: 0.0
+  3C_joint: 0.0
+  4A_joint: 0.0
+  4B_joint: 0.0
+  4C_joint: 0.0
+  5A_joint: 0.0
+  5B_joint: 0.0
+  5C_joint: 0.0
+  6A_joint: 0.0
+  6B_joint: 0.0
+  6C_joint: 0.0
