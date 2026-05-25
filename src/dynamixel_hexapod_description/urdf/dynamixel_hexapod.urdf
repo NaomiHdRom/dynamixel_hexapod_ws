@@ -39,7 +39,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/base.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/base_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -84,7 +84,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/A.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/A_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -142,7 +142,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/B.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/B_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -200,7 +200,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/C.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/C_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -258,7 +258,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/A.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/A_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -316,7 +316,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/B.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/B_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -374,7 +374,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/C.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/C_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -432,7 +432,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/A.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/A_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -490,7 +490,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/B.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/B_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -548,7 +548,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/C.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/C_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -606,7 +606,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/A.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/A_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -664,7 +664,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/B.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/B_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -722,7 +722,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/C.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/C_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -780,7 +780,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/A.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/A_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -838,7 +838,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/B.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/B_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -896,7 +896,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/C.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/C_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -954,7 +954,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/A.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/A_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -1012,7 +1012,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/B.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/B_collider.dae" />
       </geometry>
     </collision>
   </link>
@@ -1070,7 +1070,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_hexapod_description/meshes/C.dae" />
+          filename="package://dynamixel_hexapod_description/meshes/C_collider.dae" />
       </geometry>
     </collision>
   </link>
