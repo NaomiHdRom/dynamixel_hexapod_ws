@@ -44,9 +44,6 @@ UnevenTerrain {
   perlinNOctaves 8
 }
 Robot {
-  name="hexapod"
-  supervisor TRUE
-  controller "<extern>"
   translation 0 0 61.17
   children [
     DEF base_link_visual Pose {
@@ -64,12 +61,12 @@ Robot {
         anchor 0.109 0.062 0.03
       }
       device [
-        DEF 1A_joint RotationalMotor {
-          name "1A_joint"
+        DEF joint_1A RotationalMotor {
+          name "joint_1A"
           sound ""
         }
-        DEF 1A_joint_sensor PositionSensor {
-          name "1A_joint_sensor"
+        DEF joint_1A_sensor PositionSensor {
+          name "joint_1A_sensor"
         }
       ]
       endPoint DEF link_1A Solid {
@@ -82,12 +79,12 @@ Robot {
               anchor 0.078 -0.002 -0.001
             }
             device [
-              DEF 1B_joint RotationalMotor {
-                name "1B_joint"
+              DEF joint_1B RotationalMotor {
+                name "joint_1B"
                 sound ""
               }
-              DEF 1B_joint_sensor PositionSensor {
-                name "1B_joint_sensor"
+              DEF joint_1B_sensor PositionSensor {
+                name "joint_1B_sensor"
               }
             ]
             endPoint DEF link_1B Solid {
@@ -100,11 +97,11 @@ Robot {
                     anchor 0.172 -0.008 0.003
                   }
                   device [
-                    DEF 1C_joint_sensor PositionSensor {
-                      name "1C_joint_sensor"
+                    DEF joint_1C_sensor PositionSensor {
+                      name "joint_1C_sensor"
                     }
-                    DEF 1C_joint RotationalMotor {
-                      name "1C_joint"
+                    DEF joint_1C RotationalMotor {
+                      name "joint_1C"
                       sound ""
                     }
                   ]
@@ -205,12 +202,12 @@ Robot {
         anchor 0.109 -0.062 0.03
       }
       device [
-        DEF 2A_joint RotationalMotor {
-          name "2A_joint"
+        DEF joint_2A RotationalMotor {
+          name "joint_2A"
           sound ""
         }
-        DEF 2A_joint_sensor PositionSensor {
-          name "2A_joint_sensor"
+        DEF joint_2A_sensor PositionSensor {
+          name "joint_2A_sensor"
         }
       ]
       endPoint DEF link_2A Solid {
@@ -223,12 +220,12 @@ Robot {
               anchor 0.078 -0.002 -0.001
             }
             device [
-              DEF 2B_joint RotationalMotor {
-                name "2B_joint"
+              DEF joint_2B RotationalMotor {
+                name "joint_2B"
                 sound ""
               }
-              DEF 2B_joint_sensor PositionSensor {
-                name "2B_joint_sensor"
+              DEF joint_2B_sensor PositionSensor {
+                name "joint_2B_sensor"
               }
             ]
             endPoint DEF link_2B Solid {
@@ -241,11 +238,11 @@ Robot {
                     anchor 0.172 -0.008 0.003
                   }
                   device [
-                    DEF 2C_joint_sensor PositionSensor {
-                      name "2C_joint_sensor"
+                    DEF joint_2C_sensor PositionSensor {
+                      name "joint_2C_sensor"
                     }
-                    DEF 2C_joint RotationalMotor {
-                      name "2C_joint"
+                    DEF joint_2C RotationalMotor {
+                      name "joint_2C"
                       sound ""
                     }
                   ]
@@ -346,12 +343,12 @@ Robot {
         anchor 0 -0.125 0.03
       }
       device [
-        DEF 3A_joint RotationalMotor {
-          name "3A_joint"
+        DEF joint_3A RotationalMotor {
+          name "joint_3A"
           sound ""
         }
-        DEF 3A_joint_sensor PositionSensor {
-          name "3A_joint_sensor"
+        DEF joint_2A_sensor PositionSensor {
+          name "joint_3A_sensor"
         }
       ]
       endPoint DEF link_3A Solid {
@@ -364,12 +361,12 @@ Robot {
               anchor 0.078 -0.002 -0.001
             }
             device [
-              DEF 3B_joint RotationalMotor {
-                name "3B_joint"
+              DEF joint_3B RotationalMotor {
+                name "joint_3B"
                 sound ""
               }
-              DEF 3B_joint_sensor PositionSensor {
-                name "3B_joint_sensor"
+              DEF joint_3B_sensor PositionSensor {
+                name "joint_3B_sensor"
               }
             ]
             endPoint DEF link_3B Solid {
@@ -382,11 +379,11 @@ Robot {
                     anchor 0.172 -0.008 0.003
                   }
                   device [
-                    DEF 3C_joint_sensor PositionSensor {
-                      name "3C_joint_sensor"
+                    DEF joint_3C_sensor PositionSensor {
+                      name "joint_3C_sensor"
                     }
-                    DEF 3C_joint RotationalMotor {
-                      name "3C_joint"
+                    DEF joint_3C RotationalMotor {
+                      name "joint_3C"
                       sound ""
                     }
                   ]
@@ -487,12 +484,12 @@ Robot {
         anchor -0.109 -0.062 0.03
       }
       device [
-        DEF 4A_joint RotationalMotor {
-          name "4A_joint"
+        DEF joint_4A RotationalMotor {
+          name "joint_4A"
           sound ""
         }
-        DEF 4A_joint_sensor PositionSensor {
-          name "4A_joint_sensor"
+        DEF joint_4A_sensor PositionSensor {
+          name "joint_4A_sensor"
         }
       ]
       endPoint DEF link_4A Solid {
@@ -505,12 +502,12 @@ Robot {
               anchor 0.078 -0.002 -0.001
             }
             device [
-              DEF 4B_joint RotationalMotor {
-                name "4B_joint"
+              DEF joint_4B RotationalMotor {
+                name "joint_4B"
                 sound ""
               }
-              DEF 4B_joint_sensor PositionSensor {
-                name "4B_joint_sensor"
+              DEF joint_4B_sensor PositionSensor {
+                name "joint_4B_sensor"
               }
             ]
             endPoint DEF link_4B Solid {
@@ -523,11 +520,11 @@ Robot {
                     anchor 0.172 -0.008 0.003
                   }
                   device [
-                    DEF 4C_joint_sensor PositionSensor {
-                      name "4C_joint_sensor"
+                    DEF joint_4C_sensor PositionSensor {
+                      name "joint_4C_sensor"
                     }
-                    DEF 4C_joint RotationalMotor {
-                      name "4C_joint"
+                    DEF joint_4C RotationalMotor {
+                      name "joint_4C"
                       sound ""
                     }
                   ]
@@ -628,12 +625,12 @@ Robot {
         anchor -0.109 0.062 0.03
       }
       device [
-        DEF 5A_joint RotationalMotor {
-          name "5A_joint"
+        DEF joint_5A RotationalMotor {
+          name "joint_5A"
           sound ""
         }
-        DEF 5A_joint_sensor PositionSensor {
-          name "5A_joint_sensor"
+        DEF joint_4A_sensor PositionSensor {
+          name "joint_5A_sensor"
         }
       ]
       endPoint DEF link_5A Solid {
@@ -667,7 +664,7 @@ Robot {
                     DEF joint_5C_sensor PositionSensor {
                       name "joint_5C_sensor"
                     }
-                    DEF joint_5C RotationalMotor {
+                    DEF joint_4C RotationalMotor {
                       name "joint_5C"
                       sound ""
                     }
@@ -769,12 +766,12 @@ Robot {
         anchor 0 0.125 0.03
       }
       device [
-        DEF 6A_joint RotationalMotor {
-          name "6A_joint"
+        DEF joint_4A RotationalMotor {
+          name "joint_6A"
           sound ""
         }
-        DEF 6A_joint_sensor PositionSensor {
-          name "6A_joint_sensor"
+        DEF joint_4A_sensor PositionSensor {
+          name "joint_6A_sensor"
         }
       ]
       endPoint DEF link_6A Solid {
@@ -787,12 +784,12 @@ Robot {
               anchor 0.078 -0.002 -0.001
             }
             device [
-              DEF 6B_joint RotationalMotor {
-                name "6B_joint"
+              DEF joint_6B RotationalMotor {
+                name "joint_6B"
                 sound ""
               }
-              DEF 6B_joint_sensor PositionSensor {
-                name "6B_joint_sensor"
+              DEF joint_6B_sensor PositionSensor {
+                name "joint_6B_sensor"
               }
             ]
             endPoint DEF link_6B Solid {
@@ -805,11 +802,11 @@ Robot {
                     anchor 0.172 -0.008 0.003
                   }
                   device [
-                    DEF 6C_joint_sensor PositionSensor {
-                      name "6C_joint_sensor"
+                    DEF joint_6C_sensor PositionSensor {
+                      name "joint_6C_sensor"
                     }
-                    DEF 6C_joint RotationalMotor {
-                      name "6C_joint"
+                    DEF joint_6C RotationalMotor {
+                      name "joint_6C"
                       sound ""
                     }
                   ]
@@ -925,4 +922,5 @@ Robot {
       0 0 0
     ]
   }
+  controller "moveit_controller"
 }
