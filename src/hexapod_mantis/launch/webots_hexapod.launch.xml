@@ -8,32 +8,44 @@
   <let name="world_path" value="$(var package_share)/worlds/hexapod.wbt" />
   <let name="controllers_path" value="$(var package_share)/controllers" />
 
-  <executable cmd="webots --mode=realtime $(var world_path)" output="screen">
-    <env name="WEBOTS_CONTROLLER_PATH" value="$(var controllers_path)" />
-    <env name="DISPLAY" value="$(env DISPLAY :0)" />
-  </executable>
+<include
+  file="$(find-pkg-share webots_ros2_launch)/launch/webots.launch.py">
+  <arg name="world" value="$(var world_path)"/>
+</include>
 
 
 
   <!-- =============== robot_state_publisher =============== -->
   <!-- TODO: agregar urdf -->
   <!-- <node pkg="robot_state_publisher" exec="robot_state_publisher">
-    <param name="robot_description" value="$(command 'cat $(var package_share)/urdf/mantis.urdf')" />
+    <param name="robot_description" value="$(command 'cat $(var package_share)/urdf/hexapod.urdf')" />
     <param name="use_sim_time" value="true" />
     <remap from="joint_states" to="/hardware/joint_states"/>
     <remap from="robot_description" to="/hardware/base/robot_description"/>
   </node> -->
-
+  <!-- ========== MOVE IT config + ros2_controll ========== -->
+  <node
+    pkg="webots_ros2_driver"
+    exec="driver"
+    name="webots_driver"
+    output="screen">
+   <param name="robot_name" value="hexapod"/>
+    
+    <param name="robot_description"
+          value="$(command xacro $(find-pkg-share dynamixel_hexapod_description)/urdf/dynamixel_hexapod.urdf)" />
+    
+    <param name="use_sim_time" value="true"/>
+  </node>
 
   <!-- ========== RViz custom config ========== -->
-  <node pkg="rviz2" exec="rviz2" name="rviz2" output="screen" args="-d $(var package_share)/rviz/mantis_wbt.rviz">
+  <!-- <node pkg="rviz2" exec="rviz2" name="rviz2" output="screen" args="-d $(var package_share)/rviz/mantis_wbt.rviz">
     <param name="use_sim_time" value="true" />
-  </node>
+  </node> -->
 
   <!-- ========== JOYSTICK (optional) ========== -->
-  <node pkg="joy" exec="joy_node" name="joy_node" output="screen">
+  <!-- <node pkg="joy" exec="joy_node" name="joy_node" output="screen">
     <remap from="joy" to="/hardware/joy"/>
-  </node>
+  </node> -->
 
 
 

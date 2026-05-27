@@ -4,7 +4,6 @@ EXTERNPROTO "../protos/backgrounds/TexturedBackground.proto"
 EXTERNPROTO "../protos/backgrounds/TexturedBackgroundLight.proto"
 EXTERNPROTO "../protos/backgrounds/UnevenTerrain.proto"
 EXTERNPROTO "../protos/backgrounds/SandyGround.proto"
-EXTERNPROTO "../protos/Mantis.proto"
 
 WorldInfo {
   info [
@@ -25,7 +24,7 @@ WorldInfo {
 Viewpoint {
   orientation -0.2749171918906461 0.068833741502657 0.9590007578900587 2.420159078333073
   position 0.3842138534312925 -0.5267889488793756 61.49109279885302
-  follow "robot"
+  follow "hexapod"
 }
 TexturedBackground {
 }
@@ -902,6 +901,7 @@ Robot {
       }
     }
   ]
+  name "hexapod"
   boundingObject DEF base_link_collider Pose {
     children [
       Mesh {
@@ -922,5 +922,5 @@ Robot {
       0 0 0
     ]
   }
-  controller "moveit_controller"
+  controller "<extern>"
 }
