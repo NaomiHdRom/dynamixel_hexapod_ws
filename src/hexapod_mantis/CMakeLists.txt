@@ -34,7 +34,6 @@ install(DIRECTORY
   rviz
   urdf
   worlds
-  scripts
   DESTINATION share/${PROJECT_NAME}
 )
 
