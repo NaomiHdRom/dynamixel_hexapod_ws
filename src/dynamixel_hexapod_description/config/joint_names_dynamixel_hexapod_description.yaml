@@ -1,1 +1,1 @@
-controller_joint_names: ['', '1A_joint', '1B_joint', '1C_joint', '2A_joint', '2B_joint', '2C_joint', '3A_joint', '3B_joint', '3C_joint', '4A_joint', '4B_joint', '4C_joint', '5A_joint', '5B_joint', '5C_joint', '6A_joint', '6B_joint', '6C_joint', ]
+controller_joint_names: ['', 'joint_1A', 'joint_1B', 'joint_1C', 'joint_2A', 'joint_2B', 'joint_2C', 'joint_3A', 'joint_3B', 'joint_3C', 'joint_4A', 'joint_4B', 'joint_4C', 'joint_5A', 'joint_5B', 'joint_5C', 'joint_6A', 'joint_6B', 'joint_6C', ]

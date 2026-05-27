@@ -8,129 +8,129 @@
                 <!-- By default, set up controllers for simulation. This won't work on real hardware -->
                 <plugin>mock_components/GenericSystem</plugin>
             </hardware>
-            <joint name="1A_joint">
+            <joint name="joint_1A">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['1A_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_1A']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="1B_joint">
+            <joint name="joint_1B">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['1B_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_1B']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="1C_joint">
+            <joint name="joint_1C">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['1C_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_1C']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="2A_joint">
+            <joint name="joint_2A">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['2A_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_2A']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="2B_joint">
+            <joint name="joint_2B">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['2B_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_2B']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="2C_joint">
+            <joint name="joint_2C">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['2C_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_2C']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="3A_joint">
+            <joint name="joint_3A">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['3A_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_3A']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="3B_joint">
+            <joint name="joint_3B">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['3B_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_3B']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="3C_joint">
+            <joint name="joint_3C">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['3C_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_3C']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="4A_joint">
+            <joint name="joint_4A">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['4A_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_4A']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="4B_joint">
+            <joint name="joint_4B">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['4B_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_4B']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="4C_joint">
+            <joint name="joint_4C">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['4C_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_4C']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="5A_joint">
+            <joint name="joint_5A">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['5A_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_5A']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="5B_joint">
+            <joint name="joint_5B">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['5B_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_5B']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="5C_joint">
+            <joint name="joint_5C">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['5C_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_5C']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="6A_joint">
+            <joint name="joint_6A">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['6A_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_6A']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="6B_joint">
+            <joint name="joint_6B">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['6B_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_6B']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="6C_joint">
+            <joint name="joint_6C">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['6C_joint']}</param>
+                  <param name="initial_value">${initial_positions['joint_6C']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>

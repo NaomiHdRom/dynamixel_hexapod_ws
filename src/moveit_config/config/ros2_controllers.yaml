@@ -33,9 +33,9 @@ controller_manager:
 LEG1_controller:
   ros__parameters:
     joints:
-      - 1A_joint
-      - 1B_joint
-      - 1C_joint
+      - joint_1A
+      - joint_1B
+      - joint_1C
     command_interfaces:
       - position
     state_interfaces:
@@ -45,9 +45,9 @@ LEG1_controller:
 LEG2_controller:
   ros__parameters:
     joints:
-      - 2A_joint
-      - 2B_joint
-      - 2C_joint
+      - joint_2A
+      - joint_2B
+      - joint_2C
     command_interfaces:
       - position
     state_interfaces:
@@ -57,9 +57,9 @@ LEG2_controller:
 LEG3_controller:
   ros__parameters:
     joints:
-      - 3A_joint
-      - 3B_joint
-      - 3C_joint
+      - joint_3A
+      - joint_3B
+      - joint_3C
     command_interfaces:
       - position
     state_interfaces:
@@ -69,9 +69,9 @@ LEG3_controller:
 LEG4_controller:
   ros__parameters:
     joints:
-      - 4A_joint
-      - 4B_joint
-      - 4C_joint
+      - joint_4A
+      - joint_4B
+      - joint_4C
     command_interfaces:
       - position
     state_interfaces:
@@ -81,9 +81,9 @@ LEG4_controller:
 LEG5_controller:
   ros__parameters:
     joints:
-      - 5A_joint
-      - 5B_joint
-      - 5C_joint
+      - joint_5A
+      - joint_5B
+      - joint_5C
     command_interfaces:
       - position
     state_interfaces:
@@ -93,9 +93,9 @@ LEG5_controller:
 LEG6_controller:
   ros__parameters:
     joints:
-      - 6A_joint
-      - 6B_joint
-      - 6C_joint
+      - joint_6A
+      - joint_6B
+      - joint_6C
     command_interfaces:
       - position
     state_interfaces:

@@ -15,42 +15,42 @@ moveit_simple_controller_manager:
   LEG1_controller:
     type: FollowJointTrajectory
     joints:
-      - 1A_joint
-      - 1B_joint
-      - 1C_joint
+      - joint_1A
+      - joint_1B
+      - joint_1C
     action_ns: follow_joint_trajectory
   LEG2_controller:
     type: FollowJointTrajectory
     joints:
-      - 2A_joint
-      - 2B_joint
-      - 2C_joint
+      - joint_2A
+      - joint_2B
+      - joint_2C
     action_ns: follow_joint_trajectory
   LEG3_controller:
     type: FollowJointTrajectory
     joints:
-      - 3A_joint
-      - 3B_joint
-      - 3C_joint
+      - joint_3A
+      - joint_3B
+      - joint_3C
     action_ns: follow_joint_trajectory
   LEG4_controller:
     type: FollowJointTrajectory
     joints:
-      - 4A_joint
-      - 4B_joint
-      - 4C_joint
+      - joint_4A
+      - joint_4B
+      - joint_4C
     action_ns: follow_joint_trajectory
   LEG5_controller:
     type: FollowJointTrajectory
     joints:
-      - 5A_joint
-      - 5B_joint
-      - 5C_joint
+      - joint_5A
+      - joint_5B
+      - joint_5C
     action_ns: follow_joint_trajectory
   LEG6_controller:
     type: FollowJointTrajectory
     joints:
-      - 6A_joint
-      - 6B_joint
-      - 6C_joint
+      - joint_6A
+      - joint_6B
+      - joint_6C
     action_ns: follow_joint_trajectory

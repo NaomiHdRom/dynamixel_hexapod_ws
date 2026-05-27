@@ -83,7 +83,7 @@
     </collision>
   </link>
   <joint
-    name="1A_joint"
+    name="joint_1A"
     type="revolute">
     <origin
       xyz="0.109 0.062 0.03"
@@ -141,7 +141,7 @@
     </collision>
   </link>
   <joint
-    name="1B_joint"
+    name="joint_1B"
     type="revolute">
     <origin
       xyz="0.07825 0 0"
@@ -199,7 +199,7 @@
     </collision>
   </link>
   <joint
-    name="1C_joint"
+    name="joint_1C"
     type="revolute">
     <origin
       xyz="0.172821824222266 -0.00859357288230811 0"
@@ -257,7 +257,7 @@
     </collision>
   </link>
   <joint
-    name="2A_joint"
+    name="joint_2A"
     type="revolute">
     <origin
       xyz="0.109 -0.062 0.03"
@@ -315,7 +315,7 @@
     </collision>
   </link>
   <joint
-    name="2B_joint"
+    name="joint_2B"
     type="revolute">
     <origin
       xyz="0.0782500731858153 0 0"
@@ -373,7 +373,7 @@
     </collision>
   </link>
   <joint
-    name="2C_joint"
+    name="joint_2C"
     type="revolute">
     <origin
       xyz="0.172821824222266 -0.00859357288230778 0"
@@ -431,7 +431,7 @@
     </collision>
   </link>
   <joint
-    name="3A_joint"
+    name="joint_3A"
     type="revolute">
     <origin
       xyz="0 -0.125 0.03"
@@ -489,7 +489,7 @@
     </collision>
   </link>
   <joint
-    name="3B_joint"
+    name="joint_3B"
     type="revolute">
     <origin
       xyz="0.0782500731858156 0 0"
@@ -547,7 +547,7 @@
     </collision>
   </link>
   <joint
-    name="3C_joint"
+    name="joint_3C"
     type="revolute">
     <origin
       xyz="0.172821824222266 -0.00859357288230712 0"
@@ -605,7 +605,7 @@
     </collision>
   </link>
   <joint
-    name="4A_joint"
+    name="joint_4A"
     type="revolute">
     <origin
       xyz="-0.109 -0.062 0.03"
@@ -663,7 +663,7 @@
     </collision>
   </link>
   <joint
-    name="4B_joint"
+    name="joint_4B"
     type="revolute">
     <origin
       xyz="0.0782500731858154 0 0"
@@ -721,7 +721,7 @@
     </collision>
   </link>
   <joint
-    name="4C_joint"
+    name="joint_4C"
     type="revolute">
     <origin
       xyz="0.172821824222266 -0.00859357288230733 0"
@@ -779,7 +779,7 @@
     </collision>
   </link>
   <joint
-    name="5A_joint"
+    name="joint_5A"
     type="revolute">
     <origin
       xyz="-0.109 0.062 0.03"
@@ -837,7 +837,7 @@
     </collision>
   </link>
   <joint
-    name="5B_joint"
+    name="joint_5B"
     type="revolute">
     <origin
       xyz="0.0782500731858156 0 0"
@@ -895,7 +895,7 @@
     </collision>
   </link>
   <joint
-    name="5C_joint"
+    name="joint_5C"
     type="revolute">
     <origin
       xyz="0.172821824222266 -0.00859357288230722 0"
@@ -953,7 +953,7 @@
     </collision>
   </link>
   <joint
-    name="6A_joint"
+    name="joint_6A"
     type="revolute">
     <origin
       xyz="0 0.1259 0.03"
@@ -1011,7 +1011,7 @@
     </collision>
   </link>
   <joint
-    name="6B_joint"
+    name="joint_6B"
     type="revolute">
     <origin
       xyz="0.0782500731858157 0 0"
@@ -1069,7 +1069,7 @@
     </collision>
   </link>
   <joint
-    name="6C_joint"
+    name="joint_6C"
     type="revolute">
     <origin
       xyz="0.172821824222266 -0.00859357288230794 0"
