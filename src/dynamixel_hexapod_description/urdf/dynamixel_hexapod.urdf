@@ -97,8 +97,8 @@
     <limit
       lower="-1.5708"
       upper="1.5708"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
   <link
     name="1B_link">
@@ -155,8 +155,8 @@
     <limit
       lower="-1.719"
       upper="3"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
   <link
     name="1C_link">
@@ -213,8 +213,8 @@
     <limit
       lower="-2.4"
       upper="1.182"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
   <link
     name="2A_link">
@@ -271,8 +271,8 @@
     <limit
       lower="-1.5708"
       upper="1.5708"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
   <link
     name="2B_link">
@@ -329,8 +329,8 @@
     <limit
       lower="-1.719"
       upper="3"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
   <link
     name="2C_link">
@@ -387,8 +387,8 @@
     <limit
       lower="-2.4"
       upper="1.182"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
   <link
     name="3A_link">
@@ -445,8 +445,8 @@
     <limit
       lower="-1.5708"
       upper="1.5708"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
   <link
     name="3B_link">
@@ -503,8 +503,8 @@
     <limit
       lower="-1.719"
       upper="3"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
   <link
     name="3C_link">
@@ -561,8 +561,8 @@
     <limit
       lower="-2.4"
       upper="1.182"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
   <link
     name="4A_link">
@@ -619,8 +619,8 @@
     <limit
       lower="-1.5708"
       upper="1.5708"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
   <link
     name="4B_link">
@@ -677,8 +677,8 @@
     <limit
       lower="-1.719"
       upper="3"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
   <link
     name="4C_link">
@@ -735,8 +735,8 @@
     <limit
       lower="-2.4"
       upper="1.182"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
   <link
     name="5A_link">
@@ -793,8 +793,8 @@
     <limit
       lower="-1.5708"
       upper="1.5708"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
   <link
     name="5B_link">
@@ -851,8 +851,8 @@
     <limit
       lower="-1.719"
       upper="3"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
   <link
     name="5C_link">
@@ -909,8 +909,8 @@
     <limit
       lower="-2.4"
       upper="1.182"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
   <link
     name="6A_link">
@@ -967,8 +967,8 @@
     <limit
       lower="-1.5708"
       upper="1.5708"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
   <link
     name="6B_link">
@@ -1025,8 +1025,8 @@
     <limit
       lower="-1.719"
       upper="3"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
   <link
     name="6C_link">
@@ -1083,7 +1083,7 @@
     <limit
       lower="-2.4"
       upper="1.182"
-      effort="1"
-      velocity="1" />
+      effort="5.0"
+      velocity="4.0" />
   </joint>
 </robot>
