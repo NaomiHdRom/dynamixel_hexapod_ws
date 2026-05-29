@@ -1,19 +1,15 @@
 from launch import LaunchDescription
-from launch.actions import ExecuteProcess, IncludeLaunchDescription
-from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch_ros.substitutions import FindPackageShare
+from launch.actions import ExecuteProcess
 from launch.substitutions import PathJoinSubstitution, EnvironmentVariable
+from launch_ros.substitutions import FindPackageShare
+from launch_ros.actions import Node
 from moveit_configs_utils import MoveItConfigsBuilder
 from moveit_configs_utils.launches import generate_demo_launch
 
 
 def generate_launch_description():
 
-    # =========================
-    # Paths
-    # =========================
     hexapod_pkg = FindPackageShare("hexapod_mantis")
-    moveit_pkg = FindPackageShare("moveit_config")
 
     world_path = PathJoinSubstitution([
         hexapod_pkg,
@@ -21,29 +17,37 @@ def generate_launch_description():
         "hexapod.wbt"
     ])
 
-    controllers_path = PathJoinSubstitution([
+    controllers_file = PathJoinSubstitution([
         hexapod_pkg,
-        "controllers"
+        "config",
+        "ros2_controllers.yaml"
     ])
 
     # =========================
-    # Webots
+    # WEBOTS
     # =========================
     webots = ExecuteProcess(
-        cmd=[
-            "webots",
-            "--mode=realtime",
-            world_path
-        ],
+        cmd=["webots", "--mode=realtime", world_path],
         output="screen",
         additional_env={
-            "WEBOTS_CONTROLLER_PATH": controllers_path,
-            "DISPLAY": EnvironmentVariable("DISPLAY")
+            "DISPLAY": EnvironmentVariable("DISPLAY"),
         }
     )
 
     # =========================
-    # MoveIt
+    # ROS2 CONTROL (CRÍTICO)
+    # =========================
+
+
+    joint_state_broadcaster = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_state_broadcaster"],
+        output="screen"
+    )
+
+    # =========================
+    # MOVEIT
     # =========================
     moveit_config = (
         MoveItConfigsBuilder(
@@ -53,12 +57,16 @@ def generate_launch_description():
         .to_moveit_configs()
     )
 
+
+
     moveit_launch = generate_demo_launch(moveit_config)
 
     # =========================
-    # LaunchDescription
+    # FINAL
     # =========================
     return LaunchDescription([
         webots,
+     
+        joint_state_broadcaster,
         moveit_launch
     ])
